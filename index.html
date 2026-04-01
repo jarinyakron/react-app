@@ -15,15 +15,7 @@ body {
     gap: 25px;
     padding: 30px;
 }
-/* 📱 มือถือ */
-@media (max-width: 768px) {
-  .gallery {
-    display: flex !important;
-    flex-direction: column;
-    padding: 15px;
-    gap: 20px;
-  }
-}
+
 /* HERO (รูปหัว) */
 .hero img {
     width: 100%;
@@ -100,14 +92,14 @@ body {
   color: white;
   cursor: pointer;
 }
-/* 📱 MOBILE: ให้เป็นแถวเดียว */
-@media (max-width: 768px) {
-  .gallery {
+.gallery {
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    gap: 20px;
-  }
+    gap: 25px;
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+}
 
   .card {
     border-radius: 20px;
@@ -121,7 +113,7 @@ body {
   .header h1 {
     font-size: 26px;
   }
-}
+
 .card {
   background: rgba(255,255,255,0.9);
   backdrop-filter: blur(10px);
